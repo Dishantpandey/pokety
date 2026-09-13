@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f4f7fb;
+  --foreground: #101828;
+  --card: rgba(255, 255, 255, 0.7);
+  --muted: #667085;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--foreground);
+  background:
+    radial-gradient(circle at top left, rgba(168, 85, 247, 0.2), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.18), transparent 30%),
+    linear-gradient(135deg, #f8fafc 0%, #eef2ff 30%, #f8fafc 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top left, rgba(168, 85, 247, 0.2), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.2), transparent 28%),
+    linear-gradient(135deg, #020817 0%, #0f172a 45%, #111827 100%);
+  color: #f8fafc;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.dark .glass {
+  background: rgba(17, 24, 39, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.5);
+  border-radius: 9999px;
+}
