@@ -1,6 +1,44 @@
-# Pokety - AI Expense Parser
 
-An intelligent expense tracking application that uses AI to parse expense text and categorize transactions.
+# 💳 Pokety — AI Expense Tracker
+
+Pokety is an intelligent, AI-powered expense tracking application designed to help users manage their finances effortlessly. By leveraging Large Language Models (LLMs), Natural Language Processing (NLP), and predictive analytics, Pokety automatically categorizes transactions and generates personalized budgeting recommendations.
+
+---
+
+## 🏗️ Project Architecture
+
+The repository is organized into distinct modules supporting the cross-platform experience:
+
+* **`pokety_Backend/`** — Server-side application handling API requests, business logic, and AI integrations (Python, LLM & NLP pipelines).
+* **`pokety_Frontend/`** — Cross-platform mobile client built for users to track expenses on the go (Flutter).
+* **`pokety_Web/`** — Web-based client interface for desktop and browser access.
+* **`venv/`** — Python virtual environment configuration.
+
+---
+
+## ⚙️ Key Features
+
+* **AI Auto-Categorization:** Uses NLP and LLMs to automatically parse and classify user transactions into intuitive expense categories.
+* **Predictive Budgeting:** Analyzes spending trends to deliver customized budgeting recommendations and financial alerts.
+* **Cross-Platform Support:** Seamless synchronization across mobile (`pokety_Frontend`) and web (`pokety_Web`) interfaces via Firebase.
+* **RESTful API Backend:** Robust Python-based backend handling secure user data and model predictions.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Core Language:** Python
+* **Frontend Framework:** Flutter
+* **Backend / Database:** Firebase, REST API
+* **Intelligence:** LLMs, NLP, Predictive Analytics
+
+---
+
+## 🚀 Getting Started
+
+Quick setup scripts are included in the root directory for convenience:
+* Run `run_pokety.bat` / `run_pokety.ps1` to launch the application workflow.
+* Use `start_backend.bat` and `start_frontend.bat` to boot services independently.
 
 ## Project Structure
 
